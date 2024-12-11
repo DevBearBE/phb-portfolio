@@ -9,8 +9,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "polar-teal": "#065758",
+        "polar-ice": "#e2f0ef",
+        "polar-green": {
+          light: "#a9d4d6",
+          DEFAULT: "#82c3c5",
+        },
+        "polar-red": "#c46960",
+        "lime-green": "#5CD85A",
+      },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
+      },
+      fontSize: {
+        extreme: "13rem",
       },
     },
   },
