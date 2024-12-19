@@ -22,7 +22,7 @@ export default function Header() {
       </Link>
 
       <Button
-        className="p-2 md:hidden"
+        className="mt-10 p-2 md:hidden"
         theme="secondary"
         onClick={() => setShowNav(!showNav)}
       >

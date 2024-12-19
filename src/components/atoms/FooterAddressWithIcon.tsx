@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 type FooterAddressWithIconProps = {
-  icon: ReactNode;
-  addressLine: ReactNode;
+  readonly icon: ReactNode;
+  readonly addressLine: ReactNode;
 };
 
 export default function FooterAddressWithIcon({

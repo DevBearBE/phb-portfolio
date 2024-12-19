@@ -18,7 +18,7 @@ export default function Button({
     <button
       type={type}
       className={cn(
-        "px-6 py-1 rounded-full",
+        "px-6 py-1 min-w-fit rounded-full",
         {
           "text-white bg-polar-red": theme === "primary",
           "text-white bg-polar-green": theme === "secondary",

@@ -5,11 +5,12 @@ import {
   RiMapPinLine,
   RiSmartphoneLine,
 } from "react-icons/ri";
-import FooterAddressWithIcon from "../atoms/FooterAddressWithIcon";
+import FooterAddressWithIcon from "@/components/atoms/FooterAddressWithIcon";
+import Heading from "@/components/atoms/Heading";
 
 export default function Footer() {
   return (
-    <footer className="px-10 py-8 border-t border-t-gray-200 flex lg:grid lg:grid-cols-4 gap-4 items-center justify-between">
+    <footer className="px-10 py-8 border-t border-t-gray-200 flex flex-col-reverse md:flex-row lg:grid lg:grid-cols-4 gap-8 items-center justify-between">
       <section className="flex flex-col gap-2">
         <div className="flex flex-row gap-2 items-center">
           <RiCopyrightLine size={20} /> 2025
@@ -24,8 +25,8 @@ export default function Footer() {
           </a>
         </div>
       </section>
-      <section className="col-start-4 flex flex-col gap-4">
-        <h3 className="font-bold text-lg">Contact</h3>
+      <section className="col-start-4 flex flex-col gap-1">
+        <Heading size="sm">Contact</Heading>
         <div className="flex flex-col gap-2">
           <FooterAddressWithIcon
             icon={<RiMapPinLine color="#4b5563" size={24} />}

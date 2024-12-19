@@ -11,7 +11,7 @@ export default function NavWrapper({ showNav, setShowNav }: NavWrapperProps) {
   return (
     <nav
       className={cn(
-        "hidden lg:absolute lg:left-1/2 lg:-translate-x-1/2 md:px-2.5 md:py-1.5 bg-white flex-col md:flex-row md:gap-6 w-full md:max-w-fit items-center md:rounded-full",
+        "hidden fixed md:static lg:absolute lg:left-1/2 lg:-translate-x-1/2 md:px-2.5 md:py-1.5 bg-white flex-col md:flex-row md:gap-6 w-full md:max-w-fit items-center md:rounded-full",
         {
           flex: showNav,
         },
