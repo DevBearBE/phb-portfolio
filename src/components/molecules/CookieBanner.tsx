@@ -22,9 +22,9 @@ export default function CookieBanner() {
         </div>
         <p className="text-start md:text-justify pt-4">
           Wij gebruiken enkel functionele cookies op onze website om jullie
-          ervaring te verbeteren. De cookies worden niet gebruikt om data te
-          verzamelen, noch om gepersonaliseerde reclame te kunnen tonen en al
-          zeker niet om je surfgedrag te analyseren.
+          gebruikerservaring te verbeteren. De cookies worden niet gebruikt om
+          data te verzamelen, noch om gepersonaliseerde reclame te kunnen tonen
+          en al zeker niet om je surfgedrag te analyseren.
         </p>
       </section>
       <section>

@@ -7,7 +7,7 @@ type HeadingProps = PropsWithChildren & {
 };
 
 export default function Heading({ children, className, size }: HeadingProps) {
-  const baseClass = "py-2 font-bold";
+  const baseClass = "mb-4 py-2 font-bold";
 
   return (
     <h1

@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
+import { cn } from "@/lib/helpers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html
+      lang="en"
+      className={cn(`${GeistSans.variable} ${GeistMono.variable}`, "h-full")}
+    >
       <body className="bg-stone-100 w-full min-h-[100vh]">
         <Header />
         {children}
