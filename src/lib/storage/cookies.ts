@@ -2,7 +2,7 @@
 
 import { cookies } from "next/headers";
 
-const COOKIE_TTL = 1000 * 60 * 60 * 24; // One day
+const COOKIE_TTL = 60 * 60 * 24; // One day
 
 type CookieOptions = {
   expires?: Date;
