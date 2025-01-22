@@ -21,7 +21,7 @@ export default function RootLayout({
       lang="en"
       className={cn(`${GeistSans.variable} ${GeistMono.variable}`, "h-full")}
     >
-      <body className="bg-stone-100 w-full min-h-[100vh]">
+      <body className="bg-stone-50 w-full min-h-[100vh] flex flex-col">
         <Header />
         {children}
         <Footer />
