@@ -22,9 +22,10 @@ export default function Button({
       className={cn(
         baseClass,
         {
-          "text-white bg-polar-red": theme === "primary",
-          "text-white bg-polar-green": theme === "secondary",
-          "text-white bg-red-500": theme === "danger",
+          "text-white bg-polar-red hover:bg-polar-red-600": theme === "primary",
+          "text-white bg-polar-green hover:bg-polar-green-400":
+            theme === "secondary",
+          "text-white bg-red-500 hover:bg-red-700": theme === "danger",
         },
         className,
       )}

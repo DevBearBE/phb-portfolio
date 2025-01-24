@@ -1,5 +1,7 @@
 import Overlay from "@/components/atoms/Overlay";
 import CookieBanner from "@/components/molecules/CookieBanner";
+import HomePage from "@/components/organisms/pages/HomePage";
+import BasicPageTemplate from "@/components/templates/BasicTemplate";
 import { getCookieValue } from "@/lib/storage/cookies";
 
 export default async function Home() {
@@ -13,7 +15,9 @@ export default async function Home() {
           <CookieBanner />
         </Overlay>
       )}
-      Home
+      <BasicPageTemplate>
+        <HomePage />
+      </BasicPageTemplate>
     </>
   );
 }
