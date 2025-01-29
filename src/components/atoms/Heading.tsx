@@ -1,16 +1,23 @@
 import { PropsWithChildren } from "react";
 import { cn } from "@/lib/helpers";
+import { JSX } from "react/jsx-dev-runtime";
 
 type HeadingProps = PropsWithChildren & {
+  readonly as: keyof JSX.IntrinsicElements;
   readonly className?: string;
   readonly size: "sm" | "md" | "lg" | "xl";
 };
 
-export default function Heading({ children, className, size }: HeadingProps) {
+export default function Heading({
+  children,
+  as: Tag = "h1",
+  className,
+  size,
+}: HeadingProps) {
   const baseClass = "py-2 font-bold";
 
   return (
-    <h1
+    <Tag
       className={cn(
         baseClass,
         {
@@ -23,6 +30,6 @@ export default function Heading({ children, className, size }: HeadingProps) {
       )}
     >
       {children}
-    </h1>
+    </Tag>
   );
 }

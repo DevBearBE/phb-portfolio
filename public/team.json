@@ -1,0 +1,16 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "firstName": "Tinka",
+      "lastName": "Sebreghts",
+      "yob": 1988,
+      "profilePicture": "/img-placeholder.png",
+      "college": "Vrije Universiteit Brussel",
+      "jobTitle": "klinisch psycholoog",
+      "approvalNumber": 882124101,
+      "visumNumber": 277712,
+      "short": "Hoi! Ik ben Tinka, klinisch psycholoog. Na de masteropleiding die ik succesvol heb afgerond, heb ik een bijkomende opleiding gevolgd om me verder te specialiseren in psychodiagnostisch onderzoek. Zowel tijdens mijn studies als nadien, deed ik ervaring op in verschillende settings: van klasleerkracht tot zorgleerkracht, het referentiecentrum voor autisme en de kinderpsychiatrie. Binnen de praktijk begeleid ik kinderen, jongeren en hun ouders en voer ik diagnostisch onderzoek uit. Naast mijn werk als klinisch psycholoog en psychodiagnosticus, werk ik als leerkracht in het lager onderwijs."
+    }
+  ]
+}
