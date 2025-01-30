@@ -1,9 +1,8 @@
 import { PropsWithChildren } from "react";
 import { cn } from "@/lib/helpers";
-import { JSX } from "react/jsx-dev-runtime";
 
 type HeadingProps = PropsWithChildren & {
-  readonly as: keyof JSX.IntrinsicElements;
+  readonly as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   readonly className?: string;
   readonly size: "sm" | "md" | "lg" | "xl";
 };

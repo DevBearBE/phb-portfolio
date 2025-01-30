@@ -26,7 +26,9 @@ export default function Footer() {
         </div>
       </section>
       <section className="col-start-4 flex flex-col gap-1">
-        <Heading size="sm">Contact</Heading>
+        <Heading as="h1" size="sm">
+          Contact
+        </Heading>
         <div className="flex flex-col gap-2">
           <FooterAddressWithIcon
             icon={<RiMapPinLine color="#4b5563" size={24} />}

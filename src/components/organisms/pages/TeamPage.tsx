@@ -4,7 +4,6 @@ import CardHeader from "@/components/atoms/CardHeader";
 import Heading from "@/components/atoms/Heading";
 import Card from "@/components/molecules/Card";
 import { TeamMember } from "@/lib/types/team";
-import Image from "next/image";
 
 type TeamPageProps = {
   team: ReadonlyArray<TeamMember>;

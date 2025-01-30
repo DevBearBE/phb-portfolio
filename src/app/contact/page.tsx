@@ -1,3 +1,10 @@
+import ContactPage from "@/components/organisms/pages/ContactPage";
+import BasicPageTemplate from "@/components/templates/BasicTemplate";
+
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <BasicPageTemplate>
+      <ContactPage />
+    </BasicPageTemplate>
+  );
 }
