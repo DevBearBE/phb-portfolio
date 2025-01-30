@@ -1,8 +1,9 @@
-import { HTMLProps, PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
 import { cn } from "@/lib/helpers";
+import { JSX } from "react/jsx-dev-runtime";
 
-type HeadingProps = HTMLProps<HTMLHeadingElement> & {
-  readonly as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+type HeadingProps = PropsWithChildren & {
+  readonly as: keyof JSX.IntrinsicElements;
   readonly className?: string;
   readonly size: "sm" | "md" | "lg" | "xl";
 };
@@ -12,7 +13,7 @@ export default function Heading({
   as: Tag = "h1",
   className,
   size,
-}: PropsWithChildren<HeadingProps>) {
+}: HeadingProps) {
   const baseClass = "py-2 font-bold";
 
   return (
