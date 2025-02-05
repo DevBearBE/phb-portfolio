@@ -1,0 +1,18 @@
+{
+  "diagnostics": {
+    "intake": 90,
+    "screeningSurvey": 55,
+    "intelligence": {
+      "logopaedics": 200,
+      "extensive": 250
+    },
+    "neuro": 250,
+    "ass": 250,
+    "experienceSurvey": 125,
+    "observation": 125,
+    "advice": 95
+  },
+  "counseling": {
+    "individual": 70
+  }
+}

@@ -4,7 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
 import { cn } from "@/lib/helpers";
-import "./globals.css";
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Praktijk Het Bergsken",

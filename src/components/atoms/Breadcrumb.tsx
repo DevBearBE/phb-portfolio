@@ -2,9 +2,13 @@
 
 import { usePathname } from "next/navigation";
 
-export default function BreadCrumb() {
+type BreadCrumbProps = {
+  readonly pathSegment?: string;
+};
+
+export default function BreadCrumb({ pathSegment }: BreadCrumbProps) {
   const pathname: string = usePathname();
-  const pageTitle: string = pathname.slice(1);
+  const pageTitle: string = !pathSegment ? pathname.slice(1) : pathSegment;
 
   return (
     <div className={"hidden lg:block absolute -top-20 -left-1 pt-4 -z-10"}>

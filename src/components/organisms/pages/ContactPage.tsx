@@ -1,5 +1,5 @@
 import BreadCrumb from "@/components/atoms/Breadcrumb";
-import FooterAddressWithIcon from "@/components/atoms/FooterAddressWithIcon";
+import FooterLinkWithIcon from "@/components/atoms/FooterLinkWithIcon";
 import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,29 +30,30 @@ export default function ContactPage() {
             Contact
           </Heading>
           <div className="flex flex-col gap-2">
-            <FooterAddressWithIcon
-              icon={<RiMapPinLine color="#4b5563" size={24} />}
-              addressLine={
-                <a
-                  href="https://www.google.be/maps/place/Het+Bergsken+7,+2500+Lier/@51.1435538,4.5683534,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc6fec8b8baf:0x11e3cfd190480a76!8m2!3d51.1435505!4d4.5709283!16s%2Fg%2F11hgfm1bnz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D"
-                  target="_blank"
-                >
-                  Het Bergsken 7, Lier
-                </a>
-              }
-            />
-            <FooterAddressWithIcon
-              icon={<RiSmartphoneLine color="#4b5563" size={24} />}
-              addressLine={<a href="tel:+32499390611">+32 499/39.06.11</a>}
-            />
-            <FooterAddressWithIcon
-              icon={<RiMailLine color="#4b5563" size={24} />}
-              addressLine={
-                <a href="mailto:info@praktijkhetbergsken.be?subject=Meer%20info">
-                  info@praktijkhetbergsken.be
-                </a>
-              }
-            />
+            <FooterLinkWithIcon
+              link={{
+                text: "Het Bergsken 7, Lier",
+                url: "https://www.google.be/maps/place/Het+Bergsken+7,+2500+Lier/@51.1435538,4.5683534,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc6fec8b8baf:0x11e3cfd190480a76!8m2!3d51.1435505!4d4.5709283!16s%2Fg%2F11hgfm1bnz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D",
+              }}
+            >
+              <RiMapPinLine color="#4b5563" size={24} />
+            </FooterLinkWithIcon>
+            <FooterLinkWithIcon
+              link={{
+                text: "+32 499/39.06.11",
+                url: "tel:+32499390611",
+              }}
+            >
+              <RiSmartphoneLine color="#4b5563" size={24} />
+            </FooterLinkWithIcon>
+            <FooterLinkWithIcon
+              link={{
+                text: "info@praktijkhetbergsken.be",
+                url: "mailto:info@praktijkhetbergsken.be?subject=Meer%20info",
+              }}
+            >
+              <RiMailLine color="#4b5563" size={24} />
+            </FooterLinkWithIcon>
           </div>
         </div>
       </section>

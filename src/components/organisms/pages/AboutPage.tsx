@@ -55,6 +55,7 @@ export default function AboutPage() {
           <Link
             href="https://app.qitonline.com/intakes/Praktijk%20Het%20Bergsken/8Tl89k3rp_3yXrHU25uyJoXfcieCXQFSRFCAVM7dUl4"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Zet me op de wachtlijst
           </Link>

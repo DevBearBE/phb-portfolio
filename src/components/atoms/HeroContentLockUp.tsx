@@ -8,7 +8,7 @@ export default function HeroContentLockUp() {
       <Heading as="h1" size="lg">
         Praktijk Het Bergsken
       </Heading>
-      <p>
+      <p className="font-inter">
         Psychologiepraktijk voor kinderen en jongeren. U kan bij ons terecht
         voor psychodiagnostisch onderzoek. Bovendien werken we nauw samen met
         psychiaters en neurologen in de buurt.
