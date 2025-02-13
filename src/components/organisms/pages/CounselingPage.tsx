@@ -14,7 +14,7 @@ export default function CounselingPage({ counseling }: CounselingPageProps) {
   return (
     <>
       <Heading as="h1" size="lg">
-        Psycohologische begeleiding
+        Psychologische begeleiding
       </Heading>
       <Paragraph>
         Soms word je even uit je evenwicht gehaald, wordt het allemaal eventjes
@@ -119,7 +119,7 @@ export default function CounselingPage({ counseling }: CounselingPageProps) {
           </li>
         </List>
       </section>
-      <section className="flex flex-col md:flex-row gap-4 items-center justify-center lg:mt-4 lg:justify-start">
+      <section className="flex flex-col md:flex-row gap-4 items-center justify-center mt-6 lg:mt-8 lg:justify-start">
         <Button theme="secondary">
           <Link
             href="https://app.qitonline.com/intakes/Praktijk%20Het%20Bergsken/8Tl89k3rp_3yXrHU25uyJoXfcieCXQFSRFCAVM7dUl4"

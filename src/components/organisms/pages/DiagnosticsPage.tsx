@@ -3,6 +3,7 @@ import Heading from "@/components/atoms/Heading";
 import LinkButton from "@/components/atoms/LinkButton";
 import List from "@/components/atoms/List";
 import Paragraph from "@/components/atoms/Paragraph";
+import PricingTable from "@/components/molecules/PricingTable";
 import { DiagnosticsPricing } from "@/lib/types/pricing";
 import Link from "next/link";
 
@@ -11,8 +12,6 @@ type DiagnosticsPageProps = {
 };
 
 export default function DiagnosticsPage({ diagnostics }: DiagnosticsPageProps) {
-  console.log(diagnostics);
-
   return (
     <>
       <Heading as="h1" size="lg">
@@ -123,8 +122,9 @@ export default function DiagnosticsPage({ diagnostics }: DiagnosticsPageProps) {
           van het dure psychodiagnostisch materiaal dat wordt gebruikt voor een
           kwalitatief onderzoek.
         </Paragraph>
+        <PricingTable diagnostics={diagnostics} />
       </section>
-      <section className="flex flex-col md:flex-row gap-4 items-center justify-center lg:mt-4 lg:justify-start">
+      <section className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8 lg:mt-12 lg:justify-start">
         <Button theme="secondary">
           <Link
             href="https://app.qitonline.com/intakes/Praktijk%20Het%20Bergsken/8Tl89k3rp_3yXrHU25uyJoXfcieCXQFSRFCAVM7dUl4"

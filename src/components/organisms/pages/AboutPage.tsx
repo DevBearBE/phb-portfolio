@@ -2,6 +2,7 @@ import BreadCrumb from "@/components/atoms/Breadcrumb";
 import Button from "@/components/atoms/Button";
 import Heading from "@/components/atoms/Heading";
 import LinkButton from "@/components/atoms/LinkButton";
+import Paragraph from "@/components/atoms/Paragraph";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -15,13 +16,13 @@ export default function AboutPage() {
         <Heading as="h2" size="sm">
           Waar staan we voor?
         </Heading>
-        <p>De visie van onze praktijk is...</p>
+        <Paragraph>De visie van onze praktijk is...</Paragraph>
       </section>
       <section>
         <Heading as="h2" size="sm">
           Waarvoor kan je bij ons terecht?
         </Heading>
-        <p>
+        <Paragraph>
           Binnen onze praktijk bieden we psychodiagnostisch onderzoek aan.
           Indien nodig kan er ook psychologische begeleiding opgestart worden,
           maar dit is op aanvraag. Voor psychodiagnostisch onderzoek focussen we
@@ -34,21 +35,21 @@ export default function AboutPage() {
             aanbod
           </LinkButton>{" "}
           pagina.
-        </p>
+        </Paragraph>
       </section>
       <section>
         <Heading as="h2" size="sm">
           Waar kan je ons vinden?
         </Heading>
-        <p>
+        <Paragraph>
           Onze praktijk bevindt zich in Lier en is gemakkelijk bereikbaar met de
           wagen of het openbaar vervoer. Er zijn voldoende parkeermogelijkheden
           vlakbij. De afspraken gaan door in huiselijke sfeer.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
           Wilt u graag een plaatsje bemachtigen op de wachtlijst? Of had u graag
           meer info gewenst?
-        </p>
+        </Paragraph>
       </section>
       <section className="flex flex-col md:flex-row gap-4 items-center justify-center lg:mt-4 lg:justify-start">
         <Button theme="secondary">
