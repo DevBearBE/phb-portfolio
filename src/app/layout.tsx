@@ -7,7 +7,10 @@ import { cn } from "@/lib/helpers";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Praktijk Het Bergsken",
+  title: {
+    default: "Praktijk Het Bergsken",
+    template: "%s | Praktijk Het Bergsken",
+  },
   description: "Portfolio website voor Praktijk Het Bergsken",
 };
 
