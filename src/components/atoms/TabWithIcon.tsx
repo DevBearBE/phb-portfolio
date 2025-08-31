@@ -22,7 +22,7 @@ export default function TabWithIcon({
         "text-polar-ice-600 border-b-2 border-polar-ice-600": isActive,
       })}
     >
-      <Link className="px-8 pb-4 inline-flex gap-4" href={link.path}>
+      <Link className="md:px-8 px-2 pb-4 inline-flex gap-4" href={link.path}>
         {children}
         {link.text}
       </Link>

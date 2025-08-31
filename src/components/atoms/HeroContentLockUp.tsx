@@ -8,19 +8,23 @@ export default function HeroContentLockUp() {
       <Heading as="h1" size="lg">
         Praktijk Het Bergsken
       </Heading>
-      <p className="font-inter">
-        Psychologiepraktijk voor kinderen en jongeren. U kan bij ons terecht
-        voor psychodiagnostisch onderzoek. Bovendien werken we nauw samen met
-        psychiaters en neurologen in de buurt.
-      </p>
-      <p>Wenst u meer info over onze praktijk?</p>
-      <LinkButton
-        className="flex flex-row items-center"
-        theme="primary"
-        href="/over"
-      >
-        Lees meer <RiArrowRightSLine size={20} />
-      </LinkButton>
+        <section>
+          <Heading as='h2' size='sm'>
+            Psychodiagnostisch onderzoek voor kinderen en jongeren
+          </Heading>
+          <p className="font-inter">
+              Praktijk Het Bergsken helpt om sterktes en moeilijkheden in kaart te brengen, zodat de juiste ondersteuning mogelijk wordt.
+              We werken multidisciplinair samen met kinder- en jeugdpsychiaters en neurologen, omdat een gezamenlijke aanpak essentieel is voor een correcte diagnosevorming.
+          </p>
+          <p>In beperkte mate bieden we ook psychologische begeleiding aan voor kinderen en jongeren van 7 tot 21 jaar.</p>
+        </section>
+          <LinkButton
+            className="flex flex-row items-center"
+            theme="primary"
+            href="/over"
+          >
+            Lees meer <RiArrowRightSLine size={20} />
+          </LinkButton>
     </section>
   );
 }

@@ -1,20 +1,15 @@
 import { TeamMember } from "@/lib/types/team";
+import {PropsWithChildren} from "react";
 
 type CardBodyProps = {
   teamMember?: TeamMember;
 };
 
-export default function CardBody({ teamMember }: CardBodyProps) {
+export default function CardBody({ children, teamMember }: PropsWithChildren<CardBodyProps>) {
   if (!teamMember) {
     return (
       <>
-        <p>
-          Indien een bepaalde vraag of problematiek een multidisciplinaire
-          aanpak vraagt, wordt er samengewerkt met verschillende externe
-          hulpverleners (logopedist, kinesist, psychomotorisch therapeut,..) en
-          gespecialiseerde artsen (kinderpsychiater, kinderneuroloog,..) uit de
-          regio.
-        </p>
+          {children}
       </>
     );
   }
