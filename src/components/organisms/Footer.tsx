@@ -32,8 +32,8 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <FooterLinkWithIcon
             link={{
-              text: "Het Bergsken 7, Lier",
-              url: "https://www.google.be/maps/place/Het+Bergsken+7,+2500+Lier/@51.1435538,4.5683534,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc6fec8b8baf:0x11e3cfd190480a76!8m2!3d51.1435505!4d4.5709283!16s%2Fg%2F11hgfm1bnz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D",
+              text: "Kanaalstraat 6, Emblem",
+              url: "https://www.google.com/maps/place/Kanaalstraat+6,+2520+Ranst,+Belgium/@51.1560883,4.5864225,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc3eea0bcb81:0x8303f77331fa59d4!8m2!3d51.156085!4d4.5889974!16s%2Fg%2F11c1gmp8dd?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
             }}
           >
             <RiMapPinLine color="#4b5563" size={24} />
