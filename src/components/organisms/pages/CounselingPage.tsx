@@ -55,10 +55,11 @@ export default function CounselingPage({ counseling }: CounselingPageProps) {
         </Heading>
         <Paragraph>
           De kostprijs van een individuele sessie bedraagt €
-          {counseling.individual}. Sommige mutualiteiten voorzien een
-          gedeeltelijke terugbetaling. Dit is afhankelijk van uw mutualiteit.
+          {counseling.individual}. Ik ben erkend psycholoog en aangesloten bij de psychologencommissie, alleen geen ELP-psycholoog.
+            Dit betekent dat de terugbetaling voor eerstelijnspsychologische zorg niet van toepassing is.
+            Veel mutualiteiten voorzien echter een gedeeltelijke terugbetaling per sessie.
           Hieronder kunt u alvast meer informatie vinden per mutualiteit. Voor
-          de meest recente informatie neemt u best contact op met uw
+          de meest recente informatie neemt u best rechtstreeks contact op met uw
           mutualiteit.
         </Paragraph>
         <List>

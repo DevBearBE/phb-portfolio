@@ -4,6 +4,7 @@ import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
 import Link from "next/link";
 import { RiMailLine, RiMapPinLine, RiSmartphoneLine } from "react-icons/ri";
+import Button from "@/components/atoms/Button";
 
 export default function ContactPage() {
   return (
@@ -14,11 +15,11 @@ export default function ContactPage() {
       </Heading>
       <section className="flex flex-col lg:flex-row gap-4 lg:gap-12 items-center">
         <Link
-          href="https://www.google.de/maps/place/Het+Bergsken+7,+2500+Lier/@51.1442,4.5710141,16z/data=!4m6!3m5!1s0x47c3fc6fec8b8baf:0x11e3cfd190480a76!8m2!3d51.1435505!4d4.5709283!16s%2Fg%2F11hgfm1bnz?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+          href="https://www.google.com/maps/place/Kanaalstraat+6,+2520+Ranst,+Belgium/@51.1560883,4.5864225,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc3eea0bcb81:0x8303f77331fa59d4!8m2!3d51.156085!4d4.5889974!16s%2Fg%2F11c1gmp8dd?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
         >
           <Image
-            src="/phb-gm.png"
+            src="/phb-kessel-gm.png"
             alt="google-maps_praktijk-het-bergsken"
             className="object-contain rounded-xl shadow-lg"
             width={800}
@@ -32,8 +33,8 @@ export default function ContactPage() {
           <div className="flex flex-col gap-2">
             <FooterLinkWithIcon
               link={{
-                text: "Het Bergsken 7, Lier",
-                url: "https://www.google.be/maps/place/Het+Bergsken+7,+2500+Lier/@51.1435538,4.5683534,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc6fec8b8baf:0x11e3cfd190480a76!8m2!3d51.1435505!4d4.5709283!16s%2Fg%2F11hgfm1bnz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D",
+                text: "Kanaalstraat 6, Emblem",
+                url: "https://www.google.com/maps/place/Kanaalstraat+6,+2520+Ranst,+Belgium/@51.1560883,4.5864225,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3fc3eea0bcb81:0x8303f77331fa59d4!8m2!3d51.156085!4d4.5889974!16s%2Fg%2F11c1gmp8dd?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
               }}
             >
               <RiMapPinLine color="#4b5563" size={24} />
@@ -55,30 +56,39 @@ export default function ContactPage() {
               <RiMailLine color="#4b5563" size={24} />
             </FooterLinkWithIcon>
           </div>
+            <Button className='mt-4' theme="secondary">
+                <Link
+                    href="https://app.qitonline.com/intakes/Praktijk%20Het%20Bergsken/8Tl89k3rp_3yXrHU25uyJoXfcieCXQFSRFCAVM7dUl4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Zet me op de wachtlijst
+                </Link>
+            </Button>
         </div>
       </section>
       <section className="flex flex-col gap-4">
         <Heading as="h2" size="sm">
           Bereikbaarheid
         </Heading>
+          <p>De praktijk bevindt zich in Emblem en is gemakkelijk bereikbaar met de wagen of het openbaar vervoer.</p>
         <div>
           <p>Met de auto</p>
           <p>
-            De praktijk ligt op 2 minuten rijden van de R16, ring van Lier. Aan
-            het begin van de straat is een grote parking op wandelafstand.
-            Tevens zijn er enkele parkeerplaatsen vlak voor de deur.
+              De praktijk is vlot bereikbaar via de E313 (afrit Massenhoven) en de N14.
+              Er zijn voldoende parkeermogelijkheden in de directe omgeving van de praktijk, zodat je gemakkelijk met de auto kan komen.
           </p>
         </div>
         <div>
           <p>Met het openbaar vervoer</p>
           <p>
-            Op ongeveer 50 meter van de praktijk bevindt zich de bushalte 'Lier
-            Stadion'. Hier stopt bus 1, die als route 'Broechem - Lisp-Herderin'
-            heeft.
+            <strong>BUS:</strong> De praktijk is bereikbaar via buslijnen van De Lijn.
+              De dichtstbijzijnde bushalte is 'Emblem Kortestraat'  of 'Emblem Broechemsesteenweg', elk op ongeveer 5 minuten wandelen van de praktijk.
+              Deze halte wordt bediend door lijn 42A, met verbindingen vanuit onder andere Lier en Berchem Station.
           </p>
           <p>
-            Het treinstation van Lier ligt op 2km van de praktijk. U kan deze
-            afstand wandelen of buslijn 1 nemen tot aan de halte 'Lier Stadion'.
+              <strong>TREIN:</strong> Het dichtstbijzijnde treinstation is Station Lier.
+              Van daaruit kan je een bus (Halte Zagerijstraat station bus 42A richting Berchem Station) nemen naar Emblem.
           </p>
         </div>
       </section>

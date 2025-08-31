@@ -14,26 +14,17 @@ export default function PricingTable({ diagnostics }: PricingTableProps) {
         price={diagnostics.screeningSurvey}
       />
       <PricingTableRow
-        label="Intelligentieonderzoek i.f.v. logopedie met verslag (vanaf 2.5 jaar)"
-        price={diagnostics.intelligence.logopaedics}
+        label="Intelligentieonderzoek"
+        price={diagnostics.intelligence}
       />
       <PricingTableRow
-        label="Uitgebreid intelligentieonderzoek"
-        price={diagnostics.intelligence.extensive}
-      />
-      <PricingTableRow
-        label="Neuropsychologisch onderzoek"
+        label="Neuropsychologisch onderzoek (per sessie)"
         price={diagnostics.neuro}
       />
       <PricingTableRow
-        label="Onderzoek sociaal-cognitief functioneren (autisme)"
+        label="Sociaal-cognitief functioneren (per sessie)"
         price={diagnostics.ass}
       />
-      <PricingTableRow
-        label="Belevingsonderzoek (prijs per sessie van 1 uur)"
-        price={diagnostics.experienceSurvey}
-      />
-      <PricingTableRow label="Klasobservatie" price={diagnostics.observation} />
       <PricingTableRow label="Adviesgesprek" price={diagnostics.advice} />
     </article>
   );

@@ -123,6 +123,11 @@ export default function DiagnosticsPage({ diagnostics }: DiagnosticsPageProps) {
           kwalitatief onderzoek.
         </Paragraph>
         <PricingTable diagnostics={diagnostics} />
+          <Paragraph>
+              Voor psychodiagnostisch onderzoek voorzien de meeste mutualiteiten geen standaard terugbetaling.
+              Sommige ziekenfondsen maken echter geen onderscheid tussen psychologische begeleiding en psychodiagnostiek, waardoor er toch een beperkte tegemoetkoming mogelijk kan zijn.
+              Omdat dit per mutualiteit en polis verschilt, raden we aan om dit rechtstreeks bij uw ziekenfonds na te vragen. Indien gewenst bezorgen wij u na afloop van het onderzoek een attest dat u kan indienen bij de mutualiteit.
+          </Paragraph>
       </section>
       <section className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8 lg:mt-12 lg:justify-start">
         <Button theme="secondary">
