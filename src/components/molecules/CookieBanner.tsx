@@ -18,7 +18,7 @@ export default function CookieBanner() {
       <section>
         <div className="flex flex-row gap-8 items-center justify-between">
           <Image src="/cookies.png" alt="cookies" width={125} height={125} />
-          <Heading size="md">Wij houden van cookies! Jij ook?</Heading>
+          <Heading as='h1' size="md">Wij houden van cookies! Jij ook?</Heading>
         </div>
         <p className="text-start md:text-justify pt-4">
           Wij gebruiken enkel functionele cookies op onze website om jullie
