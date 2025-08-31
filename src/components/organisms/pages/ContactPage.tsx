@@ -83,7 +83,7 @@ export default function ContactPage() {
           <p>Met het openbaar vervoer</p>
           <p>
             <strong>BUS:</strong> De praktijk is bereikbaar via buslijnen van De Lijn.
-              De dichtstbijzijnde bushalte is 'Emblem Kortestraat'  of 'Emblem Broechemsesteenweg', elk op ongeveer 5 minuten wandelen van de praktijk.
+              De dichtstbijzijnde bushalte is &apos;Emblem Kortestraat&apos;  of &apos;Emblem Broechemsesteenweg&apos;, elk op ongeveer 5 minuten wandelen van de praktijk.
               Deze halte wordt bediend door lijn 42A, met verbindingen vanuit onder andere Lier en Berchem Station.
           </p>
           <p>
