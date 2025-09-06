@@ -1,13 +1,17 @@
 import { RiBrain2Fill, RiParentFill } from "react-icons/ri";
 import TabWithIcon from "../atoms/TabWithIcon";
 
-export default function TabNavigation() {
+type TabNavigationProps = {
+    readonly pathSegment: string;
+}
+
+export default function TabNavigation({ pathSegment }: TabNavigationProps) {
   return (
     <ul className="flex border-b border-polar-ice-200">
       <TabWithIcon
         link={{
           text: "Diagnostisch onderzoek",
-          path: "/aanbod/diagnostisch-onderzoek",
+          path: `/${pathSegment}/diagnostisch-onderzoek`,
         }}
       >
         <RiBrain2Fill className="shrink-0" size={24} />
@@ -15,7 +19,7 @@ export default function TabNavigation() {
       <TabWithIcon
         link={{
           text: "Psychologische begeleiding",
-          path: "/aanbod/begeleiding",
+          path: `/${pathSegment}/begeleiding`,
         }}
       >
         <RiParentFill className="shrink-0" size={24} />

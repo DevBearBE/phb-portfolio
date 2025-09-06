@@ -1,17 +1,14 @@
-import DiagnosticsPage from "@/components/organisms/pages/DiagnosticsPage";
+import DiagnosticsOfferPage from "@/components/organisms/pages/DiagnosticsOfferPage";
 import { fetchLocalData } from "@/lib/helpers/fetch";
-import {
-  PricingResponse,
-  PricingResponseSchema,
-} from "@/lib/types/pricing/responses";
+import { PricingResponse, PricingResponseSchema, } from "@/lib/types/pricing/responses";
 
-export default async function Diagnostics() {
+export default async function DiagnosticsOffer() {
   const response = await fetchLocalData<PricingResponse>("pricing.json");
   const { diagnostics } = PricingResponseSchema.parse(response);
 
   return (
     <>
-      <DiagnosticsPage diagnostics={diagnostics} />
+      <DiagnosticsOfferPage diagnostics={diagnostics} />
     </>
   );
 }

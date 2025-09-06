@@ -46,6 +46,17 @@ const nextConfig: NextConfig = {
       permanent: false,
       destination: "/",
     },
+      {
+          source: '/tarieven',
+          missing: [
+              {
+                  type: "cookie",
+                  key: "consent",
+              },
+          ],
+          permanent: false,
+          destination: "/",
+      },
     {
       source: "/contact",
       missing: [
@@ -62,6 +73,11 @@ const nextConfig: NextConfig = {
       destination: "/aanbod/diagnostisch-onderzoek",
       permanent: true,
     },
+      {
+          source: "/tarieven",
+          destination: "/tarieven/diagnostisch-onderzoek",
+          permanent: true,
+      }
   ],
 };
 
