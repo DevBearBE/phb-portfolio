@@ -3,14 +3,9 @@ import Heading from "@/components/atoms/Heading";
 import LinkButton from "@/components/atoms/LinkButton";
 import List from "@/components/atoms/List";
 import Paragraph from "@/components/atoms/Paragraph";
-import { DiagnosticsPricing } from "@/lib/types/pricing";
 import Link from "next/link";
 
-type DiagnosticsPageProps = {
-  readonly diagnostics: DiagnosticsPricing;
-};
-
-export default function DiagnosticsOfferPage({ diagnostics }: DiagnosticsPageProps) {
+export default function DiagnosticsOfferPage() {
   return (
     <>
       <Heading as="h1" size="lg">

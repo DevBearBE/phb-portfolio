@@ -3,14 +3,9 @@ import Heading from "@/components/atoms/Heading";
 import LinkButton from "@/components/atoms/LinkButton";
 import List from "@/components/atoms/List";
 import Paragraph from "@/components/atoms/Paragraph";
-import { CounselingPricing } from "@/lib/types/pricing";
 import Link from "next/link";
 
-type CounselingOfferPageProps = {
-  readonly counseling: CounselingPricing;
-};
-
-export default function CounselingOfferPage({ counseling }: CounselingOfferPageProps) {
+export default function CounselingOfferPage() {
   return (
     <>
       <Heading as="h1" size="lg">
