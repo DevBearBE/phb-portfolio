@@ -1,17 +1,9 @@
-import DiagnosticsPage from "@/components/organisms/pages/DiagnosticsPage";
-import { fetchLocalData } from "@/lib/helpers/fetch";
-import {
-  PricingResponse,
-  PricingResponseSchema,
-} from "@/lib/types/pricing/responses";
+import DiagnosticsOfferPage from "@/components/organisms/pages/DiagnosticsOfferPage";
 
-export default async function Diagnostics() {
-  const response = await fetchLocalData<PricingResponse>("pricing.json");
-  const { diagnostics } = PricingResponseSchema.parse(response);
-
+export default async function DiagnosticsOffer() {
   return (
     <>
-      <DiagnosticsPage diagnostics={diagnostics} />
+      <DiagnosticsOfferPage />
     </>
   );
 }

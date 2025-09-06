@@ -27,6 +27,9 @@ export default function NavWrapper({ showNav, setShowNav }: NavWrapperProps) {
       <NavLink path="/team" onClickHandler={() => setShowNav(false)}>
         Team
       </NavLink>
+        <NavLink path="/tarieven" onClickHandler={() => setShowNav(false)}>
+            Tarieven
+        </NavLink>
       <NavLink path="/contact" onClickHandler={() => setShowNav(false)}>
         Contact
       </NavLink>

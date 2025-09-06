@@ -1,17 +1,9 @@
-import CounselingPage from "@/components/organisms/pages/CounselingPage";
-import { fetchLocalData } from "@/lib/helpers/fetch";
-import {
-  PricingResponse,
-  PricingResponseSchema,
-} from "@/lib/types/pricing/responses";
+import CounselingOfferPage from "@/components/organisms/pages/CounselingOfferPage";
 
-export default async function Counseling() {
-  const response = await fetchLocalData<PricingResponse>("pricing.json");
-  const { counseling } = PricingResponseSchema.parse(response);
-
+export default async function CounselingOffer() {
   return (
     <>
-      <CounselingPage counseling={counseling} />
+      <CounselingOfferPage />
     </>
   );
 }

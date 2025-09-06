@@ -23,6 +23,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
+            url: 'https://praktijkhetbergsken.be/tarieven/diagnostisch-onderzoek',
+            lastModified: new Date(),
+        },
+        {
+            url: 'https://praktijkhetbergsken.be/tarieven/begeleiding',
+            lastModified: new Date(),
+        },
+        {
             url: 'https://praktijkhetbergsken.be/contact',
             lastModified: new Date(),
         },

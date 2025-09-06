@@ -3,15 +3,9 @@ import Heading from "@/components/atoms/Heading";
 import LinkButton from "@/components/atoms/LinkButton";
 import List from "@/components/atoms/List";
 import Paragraph from "@/components/atoms/Paragraph";
-import PricingTable from "@/components/molecules/PricingTable";
-import { DiagnosticsPricing } from "@/lib/types/pricing";
 import Link from "next/link";
 
-type DiagnosticsPageProps = {
-  readonly diagnostics: DiagnosticsPricing;
-};
-
-export default function DiagnosticsPage({ diagnostics }: DiagnosticsPageProps) {
+export default function DiagnosticsOfferPage() {
   return (
     <>
       <Heading as="h1" size="lg">
@@ -112,23 +106,6 @@ export default function DiagnosticsPage({ diagnostics }: DiagnosticsPageProps) {
           <li>Onderzoek naar ontwikkelingsstoornissen (o.a. ADHD)</li>
         </List>
       </section>
-      <section>
-        <Heading as="h2" size="sm">
-          Tarieven
-        </Heading>
-        <Paragraph>
-          De prijzen van de onderzoeken zijn inclusief consult, gebruik van het
-          materiaal, scoring en verslaggeving. De hoge prijzen zijn het gevolg
-          van het dure psychodiagnostisch materiaal dat wordt gebruikt voor een
-          kwalitatief onderzoek.
-        </Paragraph>
-        <PricingTable diagnostics={diagnostics} />
-          <Paragraph>
-              Voor psychodiagnostisch onderzoek voorzien de meeste mutualiteiten geen standaard terugbetaling.
-              Sommige ziekenfondsen maken echter geen onderscheid tussen psychologische begeleiding en psychodiagnostiek, waardoor er toch een beperkte tegemoetkoming mogelijk kan zijn.
-              Omdat dit per mutualiteit en polis verschilt, raden we aan om dit rechtstreeks bij uw ziekenfonds na te vragen. Indien gewenst bezorgen wij u na afloop van het onderzoek een attest dat u kan indienen bij de mutualiteit.
-          </Paragraph>
-      </section>
       <section className="flex flex-col md:flex-row gap-4 items-center justify-center mt-8 lg:mt-12 lg:justify-start">
         <Button theme="secondary">
           <Link
@@ -139,6 +116,9 @@ export default function DiagnosticsPage({ diagnostics }: DiagnosticsPageProps) {
             Zet me op de wachtlijst
           </Link>
         </Button>
+          <LinkButton theme="primary" href="/tarieven/diagnostisch-onderzoek">
+          Tarieven
+        </LinkButton>
         <LinkButton theme="primary" href="/contact">
           Neem contact op
         </LinkButton>

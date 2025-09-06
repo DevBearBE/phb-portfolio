@@ -11,11 +11,13 @@ export const metadata: Metadata = {
 export default async function AanbodLayout({
   children,
 }: Readonly<PropsWithChildren>) {
+    const pathSegment = "aanbod";
+
   return (
     <>
       <BasicPageTemplate>
-        <BreadCrumb pathSegment="aanbod" />
-        <TabNavigation />
+        <BreadCrumb pathSegment={pathSegment} />
+        <TabNavigation pathSegment={pathSegment} />
         <div>{children}</div>
       </BasicPageTemplate>
     </>
