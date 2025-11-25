@@ -14,9 +14,9 @@ export default function Header() {
     <header className="p-4 flex flex-col lg:flex-row gap-4 items-center w-full">
       <Link href={"/"} onClick={() => setShowNav(false)}>
         <Image
-          src={"/logo-phb.svg"}
+          src={"/logo-phb.png"}
           alt={"logo praktijk"}
-          width={150}
+          width={200}
           height={150}
         />
       </Link>

@@ -23,7 +23,7 @@ export default function NavLink({
     <Link
       className={cn(
         "text-center font-bold px-6 py-3 w-full md:max-w-fit md:rounded-full",
-        { "text-white bg-polar-green": isActive },
+        { "text-white bg-polar-green-700": isActive },
       )}
       href={path}
       onClick={onClickHandler}

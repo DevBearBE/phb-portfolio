@@ -24,7 +24,7 @@ export default function Button({
         {
           "text-white bg-polar-green-700 hover:bg-polar-green-900":
             theme === "primary",
-          "text-white bg-polar-green hover:bg-polar-green-400":
+          "bg-polar-green hover:bg-polar-green-400":
             theme === "secondary",
           "p-0 text-polar-red bg-transparent hover:text-polar-red-600 hover:underline":
             theme === "tertiairy",
